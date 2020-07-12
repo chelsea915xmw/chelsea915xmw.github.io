@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hola Coursera!</title>
+	<title>Chelsea's Shopping List</title>
+	<script type="text/javascript">
+			function selectAll(){
+				var items=document.getElementsByName('acs');
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=true;
+				}
+			}
+			
+			function UnSelectAll(){
+				var items=document.getElementsByName('acs');
+				for(var i=0; i<items.length; i++){
+					if(items[i].type=='checkbox')
+						items[i].checked=false;
+				}
+			}			
+	</script>
+	<link rel="stylesheet" href="Style.css">
 </head>
 <body>
-<h1> Hola Coursera! It's a beautiful day! The birds are chirping outside! <h1>
+	<h1>My Shopping List</h1>
+	<section class="Checklist">
+		<input type="Checkbox" name="acs"> Milk <br>
+		<input type="Checkbox" name="acs"> Tortillas <br>
+		<input type="Checkbox" name="acs"> Cheese <br>
+		<input type="Checkbox" name="acs"> Lemon <br>
+		<input type="Checkbox" name="acs"> Lime <br>
+		<input type="Checkbox" name="acs"> Green Pepper <br>
+		<input type="Checkbox" name="acs"> Tomatoes <br>
+		<input type="Checkbox" name="acs"> Pumpkin Seeds <br>
+		<input type="Checkbox" name="acs"> Meat <br>
+		<input type="Checkbox" name="acs"> Vegetables <br>
+	</section>
+	<p>
+		<input class="button" type="button" onclick='selectAll()' value="Select All"/>
+		<input class="button" type="button" onclick='UnSelectAll()' value="Unselect All"/>
+	</p>
 </body>
 </html>

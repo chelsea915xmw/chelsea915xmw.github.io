@@ -1,0 +1,39 @@
+body{
+	margin: 30px;
+	text-align: center;
+	background-color:#fff7e6;
+	font-family: monospace;
+	font-size: 130%;
+	color: #5c410a;
+	padding-left:10%;
+	padding-right: 10%;
+}
+body .Checklist input{
+	margin: 10px;
+
+}
+body >section {
+	text-align: left;
+	margin-bottom: 2em;
+}
+.button{
+	color: white;
+	background-color: #5c410a;
+	border-style: hidden;
+	font-size:.8em;
+	margin:10px;
+	font-family: monospace;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	border-radius: 30px;
+}
+.button:nth-child(1){
+	padding-left: 2.2em;
+	padding-right: 2.2em;
+}
+.button:hover{
+	background-color: black;
+	cursor: pointer;
+}
